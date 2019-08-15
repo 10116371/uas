@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.archyuas">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/profile"
+        android:label="archyapps"
+        android:roundIcon="@mipmap/profile"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.archyuas.activity.WelcomeActivity"
+            android:theme="@style/noTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.archyuas.activity.SplashActivity"
+            android:theme="@style/noTitleBar" />
+        <activity
+            android:name="com.example.archyuas.activity.LoginActivity"
+            android:theme="@style/noTitleBar" />
+        <activity android:name="com.example.archyuas.activity.MainActivity" />
+        <activity
+            android:name="com.example.archyuas.activity.RegisterActivity"
+            android:theme="@style/noTitleBar" />
+
+        <activity android:name="com.example.archyuas.activity.FriendsAddActivity"/>
+    </application>
+
+</manifest>
